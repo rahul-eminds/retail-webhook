@@ -9,7 +9,7 @@ export class WebhookService {
     constructor(
         private readonly axios: AxiosHttpService,
     ) {}
-    hello(context: any, message: any) {
+    webhook(context: any, message: any) {
         const { domain } = context;
         this.runWorker({ context, message });
         return {
